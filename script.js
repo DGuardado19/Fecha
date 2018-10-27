@@ -64,5 +64,8 @@ console.log("Average age %i", list.reduce((sum, {
 }) => getAge(birthday) + sum, 0) / list.length);
 
 /**
- getAge sirve
+ getAge trabaja de manera independiente al mes que se le ingresa, convirtiendo una diferencia de fechas a entero el cual esta en milisegundos representando la diferencia entre ambas fechas
+ EL numero se crea desde 1970 por la funcion date.now();
+se resta 1970 - la fecha ingresada y se resta 1970 entre el año actual.
+el resultado de ambas es la edad calculada. esto mediante agedate.getutcfullyear
  */
